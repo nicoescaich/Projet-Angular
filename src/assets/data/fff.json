@@ -1,0 +1,123 @@
+[
+    {
+        "code": "NOR",
+        "country": "Norway",
+        "flagUrl": "https://www.countryflags.io/no/flat/64.png"
+    },
+    {
+        "code": "FRA",
+        "country": "France",
+        "flagUrl": "https://www.countryflags.io/fr/flat/64.png"
+    },
+    {
+        "code": "AUS",
+        "country": "Australia",
+        "flagUrl": "https://www.countryflags.io/au/flat/64.png"
+    },
+    {
+        "code": "ITA",
+        "country": "Italy",
+        "flagUrl": "https://www.countryflags.io/it/flat/64.png"
+    },
+    {
+        "code": "SCO",
+        "country": "Scotland",
+        "flagUrl": "https://www.countryflags.io/gb/flat/64.png"
+    },
+    {
+        "code": "ENG",
+        "country": "England",
+        "flagUrl": "https://www.countryflags.io/gb/flat/64.png"
+    },
+    {
+        "code": "BRA",
+        "country": "Brazil",
+        "flagUrl": "https://www.countryflags.io/br/flat/64.png"
+    },
+    {
+        "code": "ARG",
+        "country": "Argentina",
+        "flagUrl": "https://www.countryflags.io/ar/flat/64.png"
+    },
+    {
+        "code": "CAN",
+        "country": "Canada",
+        "flagUrl": "https://www.countryflags.io/ca/flat/64.png"
+    },
+    {
+        "code": "CHN",
+        "country": "China PR",
+        "flagUrl": "https://www.countryflags.io/cn/flat/64.png"
+    },
+    {
+        "code": "NZL",
+        "country": "New Zealand",
+        "flagUrl": "https://www.countryflags.io/nz/flat/64.png"
+    },
+    {
+        "code": "NED",
+        "country": "Netherlands",
+        "flagUrl": "https://www.countryflags.io/nl/flat/64.png"
+    },
+    {
+        "code": "KOR",
+        "country": "Korea Republic",
+        "flagUrl": "https://www.countryflags.io/kr/flat/64.png"
+    },
+    {
+        "code": "CMR",
+        "country": "Cameroon",
+        "flagUrl": "https://www.countryflags.io/cm/flat/64.png"
+    },
+    {
+        "code": "GER",
+        "country": "Germany",
+        "flagUrl": "https://www.countryflags.io/de/flat/64.png"
+    },
+    {
+        "code": "THA",
+        "country": "Thailand",
+        "flagUrl": "https://www.countryflags.io/th/flat/64.png"
+    },
+    {
+        "code": "USA",
+        "country": "USA",
+        "flagUrl": "https://www.countryflags.io/us/flat/64.png"
+    },
+    {
+        "code": "SWE",
+        "country": "Sweden",
+        "flagUrl": "https://www.countryflags.io/se/flat/64.png"
+    },
+    {
+        "code": "CHI",
+        "country": "Chile",
+        "flagUrl": "https://www.countryflags.io/cl/flat/64.png"
+    },
+    {
+        "code": "JPN",
+        "country": "Japan",
+        "flagUrl": "https://www.countryflags.io/jp/flat/64.png"
+    },
+    {
+        "code": "JAM",
+        "country": "Jamaica",
+        "flagUrl": "https://www.countryflags.io/jm/flat/64.png"
+    },
+    {
+        "code": "NGA",
+        "country": "Nigeria",
+        "flagUrl": "https://www.countryflags.io/ng/flat/64.png"
+    },
+    {
+        "code": "ESP",
+        "country": "Spain",
+        "flagUrl": "https://www.countryflags.io/es/flat/64.png"
+    },
+    {
+        "code": "RSA",
+        "country": "South Africa",
+        "flagUrl": "https://www.countryflags.io/za/flat/64.png"
+    }
+]
+        

@@ -1,0 +1,54 @@
+[
+     {
+        "id": "09",
+        "nom": "09 - Ariège"
+    },
+	{
+        "id": "11",
+        "nom": "11 - Aude"
+    },
+	{
+        "id": "12",
+        "nom": "12 - Aveyron"
+    },
+	{
+        "id": "30",
+        "nom": "30 - Gard"
+    },
+	{
+        "id": "31",
+        "nom": "31 - Haute-Garonne"
+    },
+	{
+        "id": "32",
+        "nom": "32 - Gers"
+    },
+	{
+        "id": "34",
+        "nom": "34 - Hérault"
+    },
+	{
+        "id": "46",
+        "nom": "46 - Lot"
+    },
+	{
+        "id": "48",
+        "nom": "48 - Lozère"
+    },
+	{
+        "id": "65",
+        "nom": "65 - Hautes-Pyrénées"
+    },
+	{
+        "id": "66",
+        "nom": "66 - Pyrénées-Orientales"
+    },
+	{
+        "id": "81",
+        "nom": "81 - Tarn"
+    },
+	{
+        "id": "82",
+        "nom": "82 - Tarn-et-Garonne"
+    }
+]

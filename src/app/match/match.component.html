@@ -1,0 +1,80 @@
+<body>
+<div class="container">
+    <div class="row p-5 justify-content-center align-items-center">
+        <div *ngFor="let fruit of matchData">
+            <div class="card mr-3 d-inline float-left text-center mb-3" *ngIf="fruit?.fifa_id==match">
+                <h4 class="card-header" *ngIf="fruit?.fifa_id==match">
+                    {{fruit.home_team_country}} <div *ngFor="let flag of flagData"><img
+                            *ngIf="flag.country==fruit?.home_team_country" src="{{flag.flagUrl}}"></div>
+                </h4>
+                <div class="card-body" *ngIf="fruit?.fifa_id==match">
+                    <table>
+                        <tr *ngFor="let kiki of fruit?.home_team_statistics?.starting_eleven">
+                            <th>
+                                {{kiki.shirt_number}}-{{kiki?.name}}<img src="assets/imageSport/captain.png"
+                                    *ngIf="kiki.captain==true">
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card col-xs-12 border-dark mb-3 mr-3 text-center float-left" style="max-width: 23rem;">
+            <div class="card-header">
+                <h6>Statistiques du match</h6>
+            </div>
+            <div *ngFor="let fruit of matchData">
+                <div *ngIf="fruit?.fifa_id==match">
+                    <div class="card-body text-dark">
+                        <h3 class="card-title">{{fruit.home_team.goals}} -
+                            {{fruit.away_team.goals}}</h3>
+                        <p class="card-text">{{fruit?.home_team_statistics?.yellow_cards}}<img
+                                src="assets/imageSport/yellowCard.png">{{fruit.away_team_statistics?.yellow_cards}}</p>
+                        <p class="card-text">{{fruit?.home_team_statistics?.red_cards}}<img
+                                src="assets/imageSport/redcard.png">{{fruit?.away_team_statistics?.red_cards}}</p>
+                        <p class="card-text">{{fruit?.home_team_statistics?.offsides}}<img
+                                src="assets/imageSport/horsJeu.png">{{fruit?.away_team_statistics?.offsides}}</p>
+                        <p class="card-text">{{fruit?.home_team_statistics?.corners}}<img
+                                src="assets/imageSport/corner.png">{{fruit?.away_team_statistics?.corners}}</p>
+                    </div>
+                </div>
+                <div *ngIf="fruit?.fifa_id==match">
+                    <div *ngFor="let butDom of fruit.home_team_events" [ngStyle]="{'text-align':'left'}">
+
+                        <p class="card-text" *ngIf="butDom.type_of_event==goal || butDom.type_of_event==goalPenalty">
+                            {{butDom?.time}} <span *ngIf="butDom.type_of_event==goalPenalty"
+                                [ngStyle]="{'font-weight': 'bold'}"> (P) </span>
+                            <img src="assets/imageSport/ballon.jpg"> {{butDom?.player}}</p>
+                    </div>
+                    <div *ngFor="let butExt of fruit.away_team_events" [ngStyle]="{'text-align':'right'}">
+
+                        <p class="card-text" *ngIf="butExt.type_of_event==goal || butExt.type_of_event==goalPenalty">
+                            {{butExt?.player}} <img src="assets/imageSport/ballon.jpg"> {{butExt?.time}}<span
+                                *ngIf="butExt.type_of_event==goalPenalty" [ngStyle]="{'font-weight': 'bold'}">
+                                (P)</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div *ngFor="let fruit of matchData">
+            <div class="card text-center" *ngIf="fruit?.fifa_id==match">
+                <h4 class="card-header" *ngIf="fruit?.fifa_id==match">
+                    {{fruit.away_team_country}}<div *ngFor="let flag of flagData"><img
+                            *ngIf="flag.country==fruit?.away_team_country" src="{{flag.flagUrl}}"></div>
+                </h4>
+                <div class="card-body" *ngIf="fruit?.fifa_id==match">
+                    <table>
+                        <tr *ngFor="let kiki of fruit?.away_team_statistics?.starting_eleven">
+                            <th>
+                                {{kiki.shirt_number}}-{{kiki?.name}}<img src="assets/imageSport/captain.png"
+                                    *ngIf="kiki.captain==true">
+                            </th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>

@@ -1,0 +1,40 @@
+<div class="fond_gris h-100">
+  <div class="container-fluid">
+    <header class="row align-items-center">
+      <div class="col-12 text-center">
+        <img src="assets/img_mediapolis/mediapolis.png" class="img-fluid logo" />
+      </div>
+    </header>
+
+    <div *ngIf="movie">
+      <div class="row align-items-center">
+        <div class="col-md-3 col-xs-12 text-center">
+          <img src="https://image.tmdb.org/t/p/w300{{ movie.poster_path }} " class="jaquette img-fluid" />
+        </div>
+        <div class="col-md-9 col-xs-12">
+          <h1>{{movie.title}}</h1>
+          <p>{{ movie.overview}} </p>
+          <p>
+            <span class="font-weight-bold">Date de sortie: </span>
+            {{ movie.release_date}} </p>
+          <p>
+            <span class="font-weight-bold">Genres: </span>
+            <a href="#" *ngFor="let g of movie.genres"> {{ g.name}}</a>
+          </p>
+          <p>
+            <span class="font-weight-bold">Pays d'origine: </span>
+            <a href="#" *ngFor="let g of movie.production_countries"> {{ g.name}}</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="row studios align-items-center">
+        <h3 class="col-12">Studios</h3>
+        <p *ngFor="let g of movie.production_companies" class="col-4 col-sm-2 col-lg-1">
+          <!-- {{ g.name}} -->
+          <img src="https://image.tmdb.org/t/p/w200{{ g.logo_path }} " class="img-fluid img-studio" />
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

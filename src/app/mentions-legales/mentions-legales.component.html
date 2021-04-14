@@ -1,0 +1,27 @@
+<div style="text-align:center">
+    <h1>
+        La team
+    </h1>
+  </div>
+
+<div class="container">
+    <div class="row row-cols-1 row-cols-md-3">
+        <div *ngFor="let personne of personnes">
+          <div class="card mt-3 ml-3" >
+            <div class="row no-gutters">
+                <div class="col-sm-5">
+                  <img class="card-img-top" src="{{ personne.imageUrl }}">
+                </div>
+                <div class="col-sm-7">
+                    <div class="card-body">
+                      <div class="card-prenom"><b>Prénom</b> : {{ personne.prenom }}</div>
+                      <div class="card-formation"><b>Formation</b> : {{ personne.formation }}</div>
+                      <div class="card-description"><b>Description</b> : {{ personne.description }}</div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+        </div>
+    </div>
+</div>

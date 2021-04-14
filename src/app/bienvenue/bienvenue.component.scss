@@ -1,0 +1,60 @@
+body{
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Red Rose', cursive;
+    background-color:black;
+    color: black;
+    background-image:url("../../assets/imageAccueil/sunrise_1920.jpg");
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    background-position: center;
+    
+}
+
+p{
+    color: whitesmoke;
+}
+
+div.card-footer{
+    font-size: 14px;
+}
+
+div.cartes{
+margin-top: 561px;
+background-color:black;
+width: 100%;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 95px;
+    padding-top: 180px;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    color: white; 
+}
+h2, h3{
+    font-size: 25px;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    color: white; 
+}
+
+h5{
+    text-align: center;
+}
+
+div.container{
+    width: 100%;
+}
+
+img.afpa{
+    width: 180px;
+    height: 100px;
+}
+
+div.footerafpa{
+    width: 100%;
+    margin-top: 80px;
+    background-color: black;
+}

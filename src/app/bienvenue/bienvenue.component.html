@@ -1,0 +1,55 @@
+<link href="https://fonts.googleapis.com/css2?family=Red+Rose:wght@300;400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
+<body>
+    <header>
+        <h1>Bienvenue</h1>
+        <h3>design by</h3>
+        <h2>CDA3 and DWWM3</h2>
+
+    </header>
+    <div class="container-fluid cartes">
+        <div class="row d-flex justify-content-center">
+            <div class="card border-info mr-4 mt-4 mb-4" style="max-width: 18rem;">
+                <div class="card-header bg-transparent border-info text-center">
+                    <h4>Cinéma</h4>
+                </div>
+                <div class="card-body text-info">
+                    <h5 class="card-title">Médiathèque</h5>
+
+                    <p class="card-text"><img src="assets/imageAccueil/cinema.png" routerLink="/mediapolis"
+                            [ngStyle]="{'cursor': 'pointer'}"></p>
+                </div>
+                <div class="card-footer bg-transparent border-info">Olivier, Hugo, Rachid et Ahmed</div>
+            </div>
+            <div class="card border-secondary mr-4 mt-4 mb-4" style="max-width: 20rem;">
+                <div class="card-header bg-transparent border-secondary text-center">
+                    <h4>Sport</h4>
+                </div>
+                <div class="card-body text-secondary">
+                    <h5 class="card-title">Coupe du monde féminine 2019</h5>
+                    <p class="card-text"><img src="assets/imageAccueil/sport.png" routerLink="/sport"
+                            [ngStyle]="{'cursor': 'pointer'}"></p>
+                </div>
+                <div class="card-footer bg-transparent border-secondary">Florian, Nicolas, Maxime et Anthony</div>
+            </div>
+            <div class="card border-danger mr-4 mt-4 mb-4" style="max-width: 18rem; max-height: 25rem;">
+                <div class="card-header bg-transparent border-danger text-center">
+                    <h4>Map</h4>
+                </div>
+                <div class="card-body text-danger">
+                    <h5 class="card-title">Radars automatiques</h5>
+                    <p class="card-text"><img src="assets/imageAccueil/map.png" routerLink="/map"
+                            [ngStyle]="{'cursor': 'pointer'}"></p>
+                </div>
+                <div class="card-footer bg-transparent border-danger">Gaelle, Jaouad, Ludovic et Stephen</div>
+            </div>
+        </div>
+    </div>
+    
+        <div class="footerafpa text-center">
+            <p>Powered by :<img class="afpa" src="assets/imageAccueil/Logo-AFPA.jpg"
+                    href="https://www.afpa.fr/centre/centre-de-toulouse-balma"></p>
+        </div>
+    
+</body>

@@ -1,0 +1,23 @@
+<div style="text-align:center">
+    <h1>
+      Carte des radars automatiques de la région Occitanie
+    </h1>
+  </div>
+
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit(registerForm.value)">
+    <div class="form-row">
+        <div class="form-group col">
+            <label>Filtrer par département :</label>
+            <select formControlName="dep" class="form-control">
+                <option *ngFor="let departement of departements" value="{{ departement.id }}">{{ departement.nom }}</option>
+            </select>
+        </div>
+    </div>
+    <button class="btn btn-info m-1" type="submit">Valider</button>
+  </form>
+  <br>
+   
+  <!-- Déclaration du conteneur de la carte avec l'id "map" -->
+  <div id="map"></div>
+
+

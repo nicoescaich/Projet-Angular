@@ -1,0 +1,40 @@
+<div class="fond_gris">
+    <div class="container-fluid">
+        <header class="row align-items-center">
+            <div class="col d-none d-md-block"></div>
+            <div class="col text-center">
+                <img src="assets/img_mediapolis/mediapolis.png"class="img-fluid logo" />
+            </div>
+            <div class="col text-sm-right text-center">
+                <form [formGroup]="form" class="bloc-recherche">
+                    <input type="search" formControlName="title" class="rechercher" placeholder="rechercher">
+                    <button (click)="onSubmit()" class="btn-rechercher"></button>
+                </form>
+            </div>
+        </header>
+        <div class="row">
+            <div class="col-md-2 d-none d-md-block">
+                <div class="nav-categories">
+                    <h2>Catégories</h2>
+                    <ul class="list-group">
+                        <li *ngFor="let genre of genres"><span (click)="getByGenre(genre.id)">{{ genre.name}}</span></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-10 col-xs-12">
+                <div class="row">
+                    <div class="movie col-md-3 col-sm-4 col-6" *ngFor="let movie of movies">
+                        <a [routerLink]="[movie.id] "><img
+                                src="https://image.tmdb.org/t/p/w220_and_h330_face{{ movie.poster_path }} "
+                                class="jaquette img-fluid" /></a>
+                        <!-- <div class="section-movie">
+                            <h3>{{ movie.title}} </h3>
+                            <p>{{ movie.overview}} </p>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

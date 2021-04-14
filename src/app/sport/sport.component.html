@@ -1,0 +1,84 @@
+<body>
+    <br />
+    <br />
+    <div class="row">
+        <div class="text-center offset-sm-2 float-left col-md-4 col-xs-6 mb-3">
+            <img src="assets/imageSport/france-2019.jpeg" class="rounded img-fluid" />
+        </div>
+        <div class="card cdm text-center w-5 col-md-4 col-xs-6">
+            <h5 class="card-header">Coupe du Monde Féminine 2019</h5>
+            <div class="card-body">
+                <form [formGroup]="registerForm" (ngSubmit)="onSubmit(registerForm.value)">
+                    <div class="form-row">
+                        <div class="form-group col">
+                            <label>Choisissez une équipe :</label>
+                            <select formControlName="country" class="form-control">
+                                <option *ngFor="let toto of countryData" [ngValue]="toto.fifa_code">
+                                    {{ toto.country }}</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button class="btn btn-info m-1" type="submit">Valider</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="team d-none d-sm-block">
+        <table class="table col-md-6 col-xs-5 offset-sm-3 mt-5 text-center">
+            <thead>
+                <tr *ngIf="codePays != ''">
+                    <th>Lieu</th>
+                    <th>Stade</th>
+                    <th>Affluence</th>
+                    <th>Domicile</th>
+                    <th>Extérieur</th>
+                    <th>Score</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr *ngFor="let match of teamData" routerLink="/match" (click)="setMatch(match.fifa_id)"
+                    [ngStyle]="{'cursor': 'pointer'}">
+
+                    <td class=""> {{match.venue}} </td>
+                    <td class=""> {{match.location}} </td>
+                    <td> {{match.attendance}} </td>
+                    <td> {{match.away_team_country}}</td>
+                    <td> {{match.home_team_country}}</td>
+                    <td>{{match.home_team.goals}} - {{match.away_team.goals}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <div class="teamxs d-block d-sm-none">
+        <table class="table col-md-6 col-xs-5 offset-sm-3 mt-5 text-center">
+            <thead>
+                <tr *ngIf="codePays != ''">
+                    <th>Stade</th>
+                    <th>Domicile</th>
+                    <th>Extérieur</th>
+                    <th>Score</th>
+
+                </tr>
+            </thead>
+            <tbody>
+
+                <tr *ngFor="let match of teamData" routerLink="/match" (click)="setMatch(match.fifa_id)"
+                    [ngStyle]="{'cursor': 'pointer'}">
+
+                    <td> {{match.location}} </td>
+                    <td> {{match.away_team_country}}</td>
+                    <td> {{match.home_team_country}}</td>
+                    <td>{{match.home_team.goals}} - {{match.away_team.goals}}</td>
+
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</body>

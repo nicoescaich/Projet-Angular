@@ -1,0 +1,110 @@
+.fond_gris {
+  background-color: #BBD4D9 !important;
+  min-height: 100vh;
+}
+
+.container-fluid {
+  max-width: 1280px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  header{
+      margin-bottom: 2rem;
+      .logo{
+          margin: 0 auto;
+          max-width: 250px;
+      }
+      .bloc-recherche{
+          display: inline-flex;
+          .rechercher {
+            border: none;
+            border-radius: 5px 0 0 5px;
+            padding: 0.3rem 1rem;
+            height: 30px;
+          }
+          .btn-rechercher {
+            border: none;
+            background-color: white;
+            background-image: url("data:image/svg+xml,<svg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' d='M10.442 10.442a1 1 0 0 1 1.415 0l3.85 3.85a1 1 0 0 1-1.414 1.415l-3.85-3.85a1 1 0 0 1 0-1.415z'/><path fill-rule='evenodd' d='M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z'/></svg>");
+            background-repeat: no-repeat;
+            background-size: 1rem 1rem;
+            background-position: center;
+            width: 30px;
+            height: 30px;
+            border-radius: 0 5px 5px 0;
+            // &:hover, &:active, &:focus{
+            //     background-color: #FC9E88;
+            // }
+          }
+      }
+  }
+
+  .nav-categories{
+      li{
+          list-style: none;
+          cursor: pointer;
+          &:hover{
+              color: white;
+          }
+      }
+  }
+
+  .movie {
+    text-align: right;
+    margin-bottom: 3rem;
+    z-index: 1;
+    position: relative;
+
+    &:hover {
+      //background: white;
+      z-index: 2;
+      cursor: pointer;
+
+      .section-movie {
+        display: block;
+      }
+    }
+
+    &:nth-child(4) {
+      &:hover {
+        .section-movie {
+          left: -385px;
+        }
+      }
+    }
+
+    a{
+      //display: block;
+      img.jaquette {
+        border-radius: 5px;
+        display: inline-block;
+        vertical-align: middle;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+        box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow;
+        transition-property: box-shadow;
+        &:hover, &:focus, &:active {
+            box-shadow: 0 0 8px rgba(255, 255, 255, 1);
+          }
+      }
+    }
+
+
+    .section-movie {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 300px;
+      background-color: white;
+      border-radius: 5px;
+      z-index: 1000;
+      width: 450px;
+      height: 330px;
+      padding: 2rem;
+      text-align: left;
+    }
+  }
+}

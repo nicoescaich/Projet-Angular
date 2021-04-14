@@ -1,0 +1,74 @@
+[
+     {
+        "prenom": "Jaouad",
+        "imageUrl": "assets/img/jaouad.png",
+        "description": "DESCRIPTION",
+        "formation": "CDA"
+    },
+    {
+        "prenom": "Ludovic",
+        "imageUrl": "assets/img/ludo.png",
+        "description": "DESCRIPTION",
+        "formation": "CDA"
+    },
+    {
+        "prenom": "Maxime",
+        "imageUrl": "assets/img/maxime.png",
+        "description": "DESCRIPTION",
+        "formation": "CDA"
+    },
+    {
+        "prenom": "Rachid",
+        "imageUrl": "assets/img/rachid.png",
+        "description": "DESCRIPTION",
+        "formation": "CDA"
+    },
+    {
+        "prenom": "Ahmed",
+        "imageUrl": "assets/img/ahmed.png",
+        "description": "DESCRIPTION",
+        "formation": "CDA"
+    },
+    {
+        "prenom": "Stephen",
+        "imageUrl": "assets/img/stephen.png",
+        "description": "DESCRIPTION",
+        "formation": "DWWM"
+    },
+    {
+        "prenom": "Hugo",
+        "imageUrl": "assets/img/hugo.png",
+        "description": "DESCRIPTION",
+        "formation": "DWWM"
+    },
+     {
+        "prenom": "Olivier",
+        "imageUrl": "assets/img/olivier.png",
+        "description": "DESCRIPTION",
+        "formation": "DWWM"
+    },
+    {
+        "prenom": "Nicolas",
+        "imageUrl": "assets/img/nico.png",
+        "description": "DESCRIPTION",
+        "formation": "DWWM"
+    },
+    {
+        "prenom": "Florian",
+        "imageUrl": "assets/img/flo.png",
+        "description": "DESCRIPTION",
+        "formation": "DWWM"
+    },
+     {
+        "prenom": "Anthony",
+        "imageUrl": "assets/img/antho.png",
+        "description": "DESCRIPTION",
+        "formation": "DWWM"
+    },
+    {
+        "prenom": "Gaelle",
+        "imageUrl": "assets/img/gaelle.png",
+        "description": "DESCRIPTION",
+        "formation": "DWWM"
+    }
+]
